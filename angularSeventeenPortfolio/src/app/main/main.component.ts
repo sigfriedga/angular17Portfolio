@@ -7,6 +7,7 @@ import { LearningComponent } from "../learning/learning.component";
 import { EducationComponent } from "../education/education.component";
 import { ProjectComponent } from "../project/project.component";
 
+
 @Component({
   selector: 'app-main',
   standalone: true,
@@ -15,5 +16,7 @@ import { ProjectComponent } from "../project/project.component";
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
+
+
 
 }
