@@ -13,11 +13,12 @@ import { CreateProfileComponent } from './create-profile/create-profile.componen
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
+import { authGuard } from './custom/auth.guard';
 
   export const routes: Routes = [
     /*{ path: '', component: WelcomeComponent },*/
     { path: '', component: LoginComponent},
-    { path: 'home', component: MainComponent },
+    { path: 'home', component: MainComponent, canActivate:[authGuard]},
     { path: 'register', component: RegisterComponent },
 
     /*{ path: 'main', component: MainComponent },

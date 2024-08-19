@@ -1,13 +1,14 @@
 import { Component, inject } from '@angular/core';
-import { AccessService } from '../../services/access.service';
-import { Router } from '@angular/router';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Login } from '../../interfaces/Login';
 //Material
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+
+import { AccessService } from '../../services/access.service';
+import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Login } from '../../interfaces/Login';
 
 @Component({
   selector: 'app-login',
@@ -68,7 +69,7 @@ export class LoginComponent {
     })
   }
 
-  singIn() {
+  singUp() {
     this.router.navigate(['register']);
   }
 }
