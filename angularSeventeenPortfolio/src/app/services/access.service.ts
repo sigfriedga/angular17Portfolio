@@ -24,4 +24,8 @@ export class AccessService {
   login(object: Login): Observable<ResponseAccess> {
     return this.http.post<ResponseAccess>(`${this.url}Access/Login`, object)
   }
+
+  tokenValidation(token: string): Observable<ResponseAccess> {
+    return this.http.get<ResponseAccess>(`${this.url}Acceso/ValidarToken?token=${token}`)
+}
 }
